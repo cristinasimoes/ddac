@@ -45,19 +45,4 @@ subscribe2.addEventListener('click', function(){
 
 
 });
-function submitForm(e) {
-    e.preventDefault()
-    fetch("/", {
-          method: "POST",
-          headers: { "Content-Type": "application/x-www-form-urlencoded" },
-          body: this.encode({
-            "form-name": "ask-question",
-            "form_field": "something"
-          })
-        })
-          .then(() => {
-           // custom logic goes here //
-           alert('worked')
 
-          })
-  }
