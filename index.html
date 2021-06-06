@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+    <title>DDAC</title>
+    <style>
+        @font-face {
+        font-family: inter;
+        src: url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+        }
+        @font-face {
+        font-family: Gilroy;
+        src: url('Gilroy-Light.otf');
+        }
+        :root {
+  --green: #8DDE2E;
+;
+}
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            overflow: hidden;
+            font-family: inter;
+
+        }
+        .wrapper{
+            position: relative;
+        }
+        .wrapper2 {
+            position: absolute;
+    width: 100vw;
+    bottom: 12vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+
+
+}
+        #image{
+            width: 100vw;
+            height: 100vh;
+        }
+        .container{
+            bottom: 38vh;
+    color: var(--green);
+    width: 350px;
+    display: flex;
+margin: auto;   
+padding-bottom: 100px;
+     }
+
+        p{
+            font-size: 54px;
+            font-weight: 500;
+            letter-spacing: 7px;
+            margin: auto;
+            color: var(--green);
+        }
+        .date{
+            font-size: 14px;
+            text-align: right;
+            margin: auto;
+            width: 92px;
+
+       }
+       .bar{
+            font-size: 35px;
+       }
+       .container2{
+            display: flex;
+            position: absolute;
+            margin-left: 224px;
+            margin-top: 76px;
+       }
+       .subscribe{
+        font-size: 10px;
+        letter-spacing: 1px;
+        font-weight: 300;
+        width: 194px;
+        margin-bottom: 20px;
+        font-family: Gilroy;
+
+
+}
+.form-container{
+    margin: auto;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    width: 339px;
+    margin-bottom: 10px;
+
+
+}
+form > *{
+
+    margin-bottom: 10px;
+}
+form input {
+    margin-bottom: 10px;
+    background: transparent;
+    border: 1px solid var(--green);
+    font-family: Gilroy;
+
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: var(--green);
+    text-align: center;
+    font-size: 13px;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: var(--green);
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: var(--green);
+}
+#subscribeBtn{
+    background: var(--green);
+    cursor: pointer;
+}
+#subscribeBtn2{
+    /* background: var(--green); */
+    cursor: pointer;
+    color: var(--green);
+}
+input[type=email] {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+input[type=email]:focus {
+    transform: scale(1.1);
+  color: var(--green);
+}
+input[type=submit]:focus {
+    /* transform: scale(1.1); */
+  color: var(--green);
+}
+      /* #image {
+          display: none;
+      }  */
+
+      #image2{
+          display: none;
+      }
+      #subscribeBtn2{
+        display: none;
+
+      }
+      #image2 {
+    margin-left: 41px;
+    width: 264px;
+}
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <img id="image" src="pic.png" alt="">
+
+    <div id="wrapper2" class="wrapper2">
+        <div id="container" class="container">
+            <img id="image2" src="ezgif.png" width="450px"alt="">
+
+            <p class="title">TRAININGS LAGER</p>
+            <div class="container2">
+                <p class="date">22-24 <span> AUG</span>
+                </p>
+                <p class="bar">||</p>
+            </div>
+        </div> 
+        <div id="formContainer" class="form-container">
+            <p class="subscribe">Subscribe to get more information</p>
+            <form>
+                <input type="email" id="email" name="email" placeholder="Email">
+                <input id="subscribeBtn" type="button" value="Submit">
+                <input id="subscribeBtn2" type="button" value="Go Back" >
+
+            </form>
+        </div>
+    </div>
+
+
+ 
+</div>
+<script src="app.js"></script>
+
+</body>
+</html>
