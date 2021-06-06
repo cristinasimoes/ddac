@@ -191,14 +191,16 @@ input[type=submit]:focus {
             </form> -->
             <form class="contact-forms" form action='/' method='POST' data-netlify="true" name="form">
 
-                <input type="text" class="form form-name" placeholder="Name" name="name">
+                <!-- <input type="text" class="form form-name" placeholder="Name" name="name"> -->
                 <input id="email" type="email" class="form form-email" placeholder="Email" name="email">
-                <input type="text" class="form form-skype" placeholder="Skype ID" name="name">
-                <input type="text" class="form form-time"placeholder="Contact Time" name="name">
-                <textarea class="form form-message"placeholder="Message" name="message"></textarea>
-                <!-- <input id="subscribeBtn" type="submit" value="Submit" class=" form form-submit"> -->
+                <!-- <input type="text" class="form form-skype" placeholder="Skype ID" name="name"> -->
+                <!-- <input type="text" class="form form-time"placeholder="Contact Time" name="name"> -->
+                <!-- <textarea class="form form-message"placeholder="Message" name="message"></textarea> -->
                 <input id="subscribeBtn2" type="button" value="Go Back" >
+                <!-- type button instead of submit - so that doesnt reload after click -->
                 <button id="subscribeBtn" type="button" value="send" class="btn btn-primary">Submit</button>
+                <!-- <input id="subscribeBtn" type="submit" value="Submit" class=" form form-submit"> -->
+
 
             </form>     
         </div>
