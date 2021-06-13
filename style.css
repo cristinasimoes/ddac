@@ -1,0 +1,334 @@
+/* 
+        @font-face {
+            font-family: inter;
+            src: url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+            }
+            @font-face {
+            font-family: Gilroy;
+            src: url('Gilroy-Light.otf');
+            }
+            :root {
+             --green: #8DDE2E;
+    ;
+    }
+            body{
+                margin: 0;
+                padding: 0;
+                background-color: black;
+                overflow: hidden;
+                font-family: inter;
+    
+            }
+            .wrapper{
+                position: relative;
+            }
+            .wrapper2 {
+                position: absolute;
+        width: 100vw;
+        bottom: 12vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    
+    
+    
+    }
+    img{
+        object-fit: cover;
+    
+    }
+    
+            #image{
+                width: 100vw;
+                height: 100vh;
+            }
+            .container{
+                bottom: 38vh;
+        color: var(--green);
+        width: 350px;
+        display: flex;
+    margin: auto;   
+    padding-bottom: 100px;
+         }
+    
+            p{
+                font-size: 54px;
+                font-weight: 500;
+                letter-spacing: 7px;
+                margin: auto;
+                color: var(--green);
+            }
+            .date{
+                font-size: 14px;
+                text-align: right;
+                margin: auto;
+                width: 92px;
+    
+           }
+           .bar{
+                font-size: 35px;
+           }
+           .container2{
+                display: flex;
+                position: absolute;
+                margin-left: 224px;
+                margin-top: 76px;
+           }
+           .subscribe{
+            font-size: 10px;
+            letter-spacing: 1px;
+            font-weight: 300;
+            width: 194px;
+            margin-bottom: 20px;
+            font-family: Gilroy;
+    
+    
+    }
+    .form-container{
+        margin: auto;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 339px;
+        margin-bottom: 10px;
+    
+    
+    }
+    form > *{
+    
+        margin-bottom: 10px;
+    }
+    form input {
+        margin-bottom: 10px;
+        background: transparent;
+        border: 1px solid var(--green);
+        font-family: Gilroy;
+    
+    }
+    
+    ::placeholder { 
+        color: var(--green);
+        text-align: center;
+        font-size: 13px;
+    }
+    
+    :-ms-input-placeholder { 
+        color: var(--green);
+    }
+    
+    ::-ms-input-placeholder { 
+        color: var(--green);
+    }
+    #subscribeBtn{
+        background: var(--green);
+        cursor: pointer;
+    }
+    #subscribeBtn2{
+        cursor: pointer;
+        color: var(--green);
+    }
+    input[type=email] {
+      -webkit-transition: 0.5s;
+      transition: 0.5s;
+      outline: none;
+    }
+    
+    input[type=email]:focus {
+        transform: scale(1.1);
+      color: var(--green);
+    }
+    input[type=submit]:focus {
+      color: var(--green);
+    }
+
+          #image2{
+              display: none;
+          }
+          #subscribeBtn2{
+            display: none;
+    
+          }
+          #image2 {
+        margin-left: 41px;
+        width: 264px;
+          }
+
+           */
+
+
+@font-face {
+    font-family: inter;
+    src: url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+}
+@font-face {
+    font-family: Gilroy;
+    src: url('Gilroy-Light.otf');
+}
+:root {
+    --green: #8DDE2E;
+}
+html,body{
+    margin: 0;
+    padding: 0;
+    font-family: inter;
+    height: 100%;
+}
+
+body { 
+    background-image: url('pic.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: black;
+    color: var(--green);
+    overflow: hidden;
+  }
+  
+  .main-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .content {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .container-title{
+    bottom: 38vh;
+color: var(--green);
+width: 438px;
+display: flex;
+margin: auto;   
+padding-bottom: 100px;
+}
+  p{
+    font-size: 62px;
+    font-weight: 600;
+    letter-spacing: 11px;
+    margin: auto;
+    color: var(--green);
+    line-height: 1;
+}
+.date{
+    font-size: 18px;
+    text-align: right;
+    margin: auto;
+    width: 148px;
+}
+.bar{
+    font-size: 35px;
+}
+
+.container2 {
+    display: flex;
+    position: absolute;
+    margin-left: 241px;
+    margin-top: 74px;
+}
+
+
+/* FORM SECTION */
+.form-container{
+    margin: auto;
+}
+.subscribe{
+    font-size: 10px;
+    letter-spacing: 1px;
+    font-weight: 300;
+    width: 194px;
+    margin-bottom: 20px;
+    font-family: Gilroy;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 10px;
+}
+form > *{
+    margin-bottom: 10px;
+}
+form input {
+    margin-bottom: 10px;
+    background: transparent;
+    border: 1px solid var(--green);
+    font-family: Gilroy;
+    padding: 8px;
+
+}
+
+::placeholder { 
+    color: var(--green);
+    text-align: center;
+    font-size: 13px;
+}
+
+:-ms-input-placeholder { 
+    color: var(--green);
+}
+
+::-ms-input-placeholder { 
+    color: var(--green);
+}
+#subscribeBtn{
+    background: var(--green);
+    cursor: pointer;
+}
+#subscribeBtn2{
+    cursor: pointer;
+    color: var(--green);
+}
+input[type=email] {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+input[type=email]:focus {
+    transform: scale(1.1);
+  color: var(--green);
+}
+input[type=submit]:focus {
+  color: var(--green);
+}
+
+#image2{
+    display: none;
+}
+#subscribeBtn2{
+display: none;
+
+}
+@media only screen and (max-width: 500px) {
+    p{
+        font-size: 44px;
+    }
+    .date{
+        width: 92px;
+        font-size: 12px;
+    }
+    .bar{
+        font-size: 25px;
+    }
+    .container-title {
+        width: auto;
+    }
+    .container2 {
+        margin-left: 206px;
+        margin-top: 54px;
+    }
+  }
+  
+  @media only screen and (max-width: 340px) {
+    .image2{
+        width: 268px;
+
+    }
+  }
