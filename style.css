@@ -103,6 +103,14 @@ form input {
     padding: 8px;
 
 }
+form button {
+    margin-bottom: 10px;
+    background: transparent;
+    border: 1px solid var(--green);
+    font-family: Gilroy;
+    padding: 8px;
+
+}
 
 ::placeholder { 
     color: var(--green);
@@ -135,9 +143,12 @@ input[type=email]:focus {
     transform: scale(1.1);
   color: var(--green);
 }
-input[type=submit]:focus {
+/* input[type=submit]:focus {
   color: var(--green);
-}
+} */
+button:focus {
+    color: var(--green);
+  }
 
 #image2{
     display: none;
