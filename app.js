@@ -29,7 +29,7 @@ subscribe.addEventListener('click', function(){
     container.style.marginTop ="-163px";
 });
 subscribe2.addEventListener('click', function(){
-    document.body.style.backgroundImage ="url('pic.png')";
+    document.body.style.backgroundImage ="url('media/bg-image.png')";
     title.style.display= "block";
     container2.style.display= "flex";
     image2.style.display= "none";
