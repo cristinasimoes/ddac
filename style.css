@@ -4,7 +4,7 @@
 }
 @font-face {
     font-family: Gilroy;
-    src: url('Gilroy-Light.otf');
+    src: url('media/Gilroy-Light.otf');
 }
 :root {
     --green: #8DDE2E;
@@ -17,7 +17,7 @@ html,body{
 }
 
 body { 
-    background-image: url('pic.png');
+    background-image: url('media/bg-image.png');
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -25,29 +25,35 @@ body {
     background-color: black;
     color: var(--green);
     overflow: hidden;
-  }
-  
-  .main-container {
+}
+
+.main-container {
     position: relative;
     width: 100%;
     height: 100%;
-  }
-  
-  .content {
+}
+
+.ddac-icon{
+    position:absolute
+}
+
+.content {
     position: absolute;
     top: 65%;
     left: 50%;
     transform: translate(-50%, -50%);
-  }
-  .container-title{
-    bottom: 38vh;
-color: var(--green);
-width: 438px;
-display: flex;
-margin: auto;   
-padding-bottom: 100px;
 }
-  p{
+.container-title{
+    bottom: 38vh;
+    color: var(--green);
+    width: 438px;
+    display: flex;
+    margin: auto;   
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: center;
+}
+p{
     font-size: 62px;
     font-weight: 600;
     letter-spacing: 11px;
@@ -85,7 +91,6 @@ padding-bottom: 100px;
     margin-bottom: 20px;
     font-family: Gilroy;
 }
-
 form {
     display: flex;
     flex-direction: column;
@@ -101,9 +106,8 @@ form input {
     border: 1px solid var(--green);
     font-family: Gilroy;
     padding: 8px;
-
 }
-form button {
+#subscribeBtn {
     margin-bottom: 10px;
     background: transparent;
     border: 1px solid var(--green);
@@ -111,17 +115,14 @@ form button {
     padding: 8px;
 
 }
-
 ::placeholder { 
     color: var(--green);
     text-align: center;
     font-size: 13px;
 }
-
 :-ms-input-placeholder { 
     color: var(--green);
 }
-
 ::-ms-input-placeholder { 
     color: var(--green);
 }
@@ -141,22 +142,34 @@ input[type=email] {
 
 input[type=email]:focus {
     transform: scale(1.1);
-  color: var(--green);
+    color: var(--green);
 }
-/* input[type=submit]:focus {
-  color: var(--green);
-} */
+
 button:focus {
     color: var(--green);
-  }
+}
 
 #image2{
     display: none;
+    width:340px;
 }
 #subscribeBtn2{
 display: none;
 
 }
+
+input[type=email] {
+    color:var(--green);
+}
+.ddac-icon{
+    bottom: 0;
+    right: 0;
+}
+.icon{
+    width: 30px;
+}
+
+/* MEDIA QUERIES */
 @media only screen and (max-width: 500px) {
     p{
         font-size: 44px;
@@ -175,11 +188,26 @@ display: none;
         margin-left: 206px;
         margin-top: 54px;
     }
-  }
-  
-  @media only screen and (max-width: 340px) {
-    .image2{
-        width: 268px;
-
+    #image2{
+        width: 257px;
     }
+}
+  
+@media only screen and (max-width: 390px) {
+    p {
+        font-size: 33px;
+        line-height: 1.3;
+    }
+    .bar {
+        font-size: 18px;
+    }
+    .date{
+        font-size: 11px;
+        letter-spacing: 6px;
+    }
+    .container2 {
+        margin-left: 151px;
+        margin-top: 48px;
+    }
+   
   }

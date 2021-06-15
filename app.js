@@ -17,7 +17,6 @@ var container = document.getElementById('containerTitle');
 
 subscribe.addEventListener('click', function(){
     document.body.style.backgroundImage ="none";
-    // wrapper2.style.bottom ="-88vh";
     title.style.display= "none";
     container2.style.display= "none";
     image2.style.display= "block";
@@ -31,7 +30,6 @@ subscribe.addEventListener('click', function(){
 });
 subscribe2.addEventListener('click', function(){
     document.body.style.backgroundImage ="url('pic.png')";
-    // wrapper2.style.bottom ="12vh";
     title.style.display= "block";
     container2.style.display= "flex";
     image2.style.display= "none";
@@ -41,7 +39,6 @@ subscribe2.addEventListener('click', function(){
     subscribeTitle.innerHTML = "Subscribe to get more information";
     subscribeTitle.style.width="194px" ;
     container.style.marginTop ="0";
-    // formContainer.style.paddingBottom ="0";
     container.style.paddingBottom ="100px";
 });
 
