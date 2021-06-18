@@ -49,7 +49,7 @@ body {
     width: 438px;
     display: flex;
     margin: auto;   
-    padding-bottom: 100px;
+    padding-bottom: 13vh;
     display: flex;
     justify-content: center;
 }
@@ -61,35 +61,21 @@ p{
     color: var(--green);
     line-height: 1;
 }
-.date{
-    font-size: 18px;
-    text-align: right;
-    margin: auto;
-    width: 148px;
-}
-.bar{
-    font-size: 35px;
-}
 
-.container2 {
-    display: flex;
-    position: absolute;
-    margin-left: 241px;
-    margin-top: 74px;
-}
 
 
 /* FORM SECTION */
 .form-container{
     margin: auto;
 }
-.subscribe{
-    font-size: 10px;
+.subscribe {
+    font-size: 12px;
     letter-spacing: 1px;
     font-weight: 300;
-    width: 194px;
+    width: 100%;
     margin-bottom: 20px;
     font-family: Gilroy;
+    text-align: center;
 }
 form {
     display: flex;
@@ -106,7 +92,11 @@ form input {
     border: 1px solid var(--green);
     font-family: Gilroy;
     padding: 8px;
+    text-align: center;
 }
+input:focus::placeholder {
+    color: transparent;
+  }
 #subscribeBtn {
     margin-bottom: 10px;
     background: transparent;
@@ -141,7 +131,6 @@ input[type=email] {
 }
 
 input[type=email]:focus {
-    transform: scale(1.1);
     color: var(--green);
 }
 
@@ -149,9 +138,8 @@ button:focus {
     color: var(--green);
 }
 
-#image2{
-    display: none;
-    width:340px;
+#image{
+    width:100%;
 }
 #subscribeBtn2{
 display: none;
@@ -167,6 +155,7 @@ input[type=email] {
 }
 .icon{
     width: 30px;
+    padding: 7px;    
 }
 
 /* MEDIA QUERIES */
@@ -174,22 +163,17 @@ input[type=email] {
     p{
         font-size: 44px;
     }
-    .date{
-        width: 92px;
-        font-size: 12px;
-    }
-    .bar{
-        font-size: 25px;
-    }
+
     .container-title {
         width: auto;
     }
-    .container2 {
-        margin-left: 206px;
-        margin-top: 54px;
-    }
-    #image2{
+/* 
+    #image{
         width: 257px;
+    } */
+    .content {
+        width: 89vw;
+      
     }
 }
   
@@ -198,16 +182,13 @@ input[type=email] {
         font-size: 33px;
         line-height: 1.3;
     }
-    .bar {
-        font-size: 18px;
-    }
-    .date{
-        font-size: 11px;
-        letter-spacing: 6px;
-    }
-    .container2 {
-        margin-left: 151px;
-        margin-top: 48px;
+    .subscribe {
+        font-size: 10px;
     }
    
   }
+@media only screen and (max-height: 500px) {
+    .container-title {
+        padding-bottom: 7vh;
+    }
+}
