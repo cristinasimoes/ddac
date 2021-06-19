@@ -102,6 +102,12 @@ a{
     text-decoration: none;
     color: var(--green);
 }
+input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
 input:focus::placeholder {
     color: transparent;
   }

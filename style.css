@@ -140,6 +140,12 @@ input[type=email] {
   outline: none;
 }
 
+input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
 input[type=email]:focus {
     color: var(--green);
 }
