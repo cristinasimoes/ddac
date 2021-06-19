@@ -16,8 +16,8 @@ html,body{
     height: 100%;
 }
 
-body { 
-    background-image: url('media/bg-image.png');
+.body1 { 
+    background-image: url('media/bg-image.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
