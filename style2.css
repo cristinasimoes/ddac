@@ -90,6 +90,18 @@ form input {
     padding: 8px;
     text-align: center;
 }
+form button {
+    margin-bottom: 10px;
+    background: transparent;
+    border: 1px solid var(--green);
+    font-family: Gilroy;
+    padding: 8px;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: var(--green);
+}
 input:focus::placeholder {
     color: transparent;
   }
