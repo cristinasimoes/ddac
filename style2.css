@@ -35,7 +35,7 @@ html,body{
 
 .content {
     position: absolute;
-    top: 65%;
+    top: 58%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -133,8 +133,6 @@ input:focus::placeholder {
     color: var(--green);
 }
 input[type=email] {
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
   outline: none;
 }
 
