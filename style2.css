@@ -17,25 +17,11 @@ html,body{
 }
 
 .body{ 
-    background-image: url('media/bg-image.jpg');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
     background-color: black;
     color: var(--green);
     overflow: hidden;
 }
-.body2 { 
-    background-image: none;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-color: black;
-    color: var(--green);
-    overflow: hidden;
-}
+
 
 .main-container {
     position: relative;
