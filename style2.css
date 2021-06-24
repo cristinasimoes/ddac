@@ -22,7 +22,18 @@ html,body{
     overflow: hidden;
 }
 
-
+.nav{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+ul{
+    display: flex;
+}
+li{
+    padding: 0 10px;
+    list-style: none;
+}
 .main-container {
     position: relative;
     width: 100%;
@@ -38,6 +49,9 @@ html,body{
     top: 58%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+.content2{
+    top: 50%;
 }
 .container-title{
     bottom: 38vh;
@@ -64,7 +78,7 @@ p{
 .form-container{
     margin: auto;
 }
-.subscribe {
+.subscribe, .policies, a {
     font-size: 12px;
     letter-spacing: 1px;
     font-weight: 300;
@@ -72,6 +86,17 @@ p{
     margin-bottom: 20px;
     font-family: Gilroy;
     text-align: center;
+}
+
+.policies{
+    text-align: left;
+    height: 69vh;
+    overflow:auto;
+
+    font-size: 15px;
+    line-height: 21px;
+    width: 599px;
+
 }
 form {
     display: flex;
@@ -98,6 +123,7 @@ form button {
     padding: 8px;
     text-align: center;
 }
+
 a{
     text-decoration: none;
     color: var(--green);
@@ -138,6 +164,9 @@ input:focus::placeholder {
     cursor: pointer;
     color: var(--green);
 }
+#subscribeBtn2 a {
+    padding: 10px 43%;
+}
 input[type=email] {
   outline: none;
 }
@@ -163,11 +192,14 @@ input[type=email] {
     bottom: 0;
     right: 0;
 }
-.icon{
+/* .icon{
     width: 30px;
     padding: 7px;    
-}
+} */
 
+.icon{
+    width: 43px;
+}
 /* MEDIA QUERIES */
 @media only screen and (max-width: 500px) {
     p{
@@ -200,5 +232,37 @@ input[type=email] {
 @media only screen and (max-height: 500px) {
     .container-title {
         padding-bottom: 7vh;
+    }
+}
+
+
+@media only screen and (max-width: 500px) {
+
+    ul{
+        flex-direction: column;
+    }
+
+}
+@media only screen and (max-width: 600px) {
+    .container-title {
+        padding-bottom: 7vh;
+    }
+    ul{
+        padding: 0 7px;
+    }
+    .policies {
+
+        width: 89vw;
+    }
+}
+
+@media only screen and (max-width: 830px) {
+    #subscribeBtn2 a {
+        padding: 10px 39%;
+    }
+}
+@media only screen and (max-width: 330px) {
+    #subscribeBtn2 a {
+        padding: 10px 29%;
     }
 }

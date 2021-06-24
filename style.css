@@ -26,8 +26,18 @@ html,body{
     color: var(--green);
     overflow: hidden;
 }
-
-
+.nav{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+ul{
+    display: flex;
+}
+li{
+    padding: 0 10px;
+    list-style: none;
+}
 .main-container {
     position: relative;
     width: 100%;
@@ -69,7 +79,7 @@ p{
 .form-container{
     margin: auto;
 }
-.subscribe {
+.subscribe, a {
     font-size: 12px;
     letter-spacing: 1px;
     font-weight: 300;
@@ -77,6 +87,8 @@ p{
     margin-bottom: 20px;
     font-family: Gilroy;
     text-align: center;
+    color: var(--green);
+    text-decoration: none;
 }
 form {
     display: flex;
@@ -159,8 +171,7 @@ input[type=email] {
     right: 0;
 }
 .icon{
-    width: 30px;
-    padding: 7px;    
+    width: 43px;
 }
 
 /* MEDIA QUERIES */
@@ -195,5 +206,21 @@ input[type=email] {
 @media only screen and (max-height: 500px) {
     .container-title {
         padding-bottom: 7vh;
+    }
+}
+@media only screen and (max-width: 500px) {
+
+
+    ul{
+        flex-direction: column;
+    }
+
+}
+@media only screen and (max-width: 600px) {
+    .container-title {
+        padding-bottom: 7vh;
+    }
+    ul{
+        padding: 0 7px;
     }
 }
